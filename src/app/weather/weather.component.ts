@@ -17,5 +17,9 @@ export class WeatherComponent {
     this.weatherService
       .getWeather(city)
       .subscribe((weather) => (this.weather = weather));
+
+    this.weatherService
+      .getForeCast(city)
+      .subscribe((value) => console.log(value));
   }
 }
