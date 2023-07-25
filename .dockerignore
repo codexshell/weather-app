@@ -1,0 +1,20 @@
+t # Ignore everything by default
+*
+
+# Allow only the files or folders that are needed for the Angular application
+!package.json
+!package-lock.json
+!yarn.lock
+!pnpm-lock.yaml
+!angular.json
+!tsconfig*.json
+!src
+!src/*
+!src/app
+!src/app/*
+!src/assets
+!src/assets/*
+!src/environments
+!src/environments/*
+!nginx.conf
+!ngsw-config.json
