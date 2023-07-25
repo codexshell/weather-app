@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import { WeatherComponent } from './weather/weather.component';
 import { MaterialModule } from './material.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
-  declarations: [AppComponent, WeatherComponent],
+  declarations: [AppComponent, WeatherComponent, HeaderComponent],
   imports: [BrowserModule, BrowserAnimationsModule, HttpClientModule, MaterialModule, ServiceWorkerModule.register('ngsw-worker.js', {
   enabled: !isDevMode(),
   // Register the ServiceWorker as soon as the application is stable
