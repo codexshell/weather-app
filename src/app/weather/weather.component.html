@@ -26,3 +26,24 @@
     <p>Wind: {{ weather.wind.speed }} m/s</p>
   </mat-card-content>
 </mat-card>
+<div class="flex gap flex-wrap align-content-center justify-content-center">
+  <mat-card *ngFor="let forecast of forecast$ | async">
+    <mat-card-header>
+      <mat-card-title>{{ forecast.dt_txt | date }}</mat-card-title>
+      <mat-card-subtitle>{{ forecast.weather[0].main }}</mat-card-subtitle>
+    </mat-card-header>
+    <img
+      mat-card-image
+      src="https://openweathermap.org/img/wn/{{
+        forecast.weather[0].icon
+      }}@2x.png"
+      alt="{{ forecast.weather[0].main }}"
+    />
+    <mat-card-content>
+      <h1>{{ forecast.main.temp | number : "1.0-0" }} &#8451;</h1>
+      <p>Pressure: {{ forecast.main.pressure }} hPa</p>
+      <p>Humidity: {{ forecast.main.humidity }} %</p>
+      <p>Wind: {{ forecast.wind.speed }} m/s</p>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-top: 25px;
+  padding-block: 25px;
 }
 mat-form-field {
   width: 20%;
@@ -18,4 +18,19 @@ mat-card {
 h1 {
   text-align: center;
   font-size: 2.5em;
+}
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.gap {
+  gap: 1rem;
+}
+.align-content-center {
+  align-content: center;
+}
+.justify-content-center {
+  justify-content: center;
 }

@@ -29,5 +29,5 @@ export interface Forecast {
   wind: {
     speed: number;
   };
-  weather: WeatherInfo;
+  weather: WeatherInfo[];
 }
