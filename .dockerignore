@@ -1,4 +1,4 @@
-t # Ignore everything by default
+# Ignore everything by default
 *
 
 # Allow only the files or folders that are needed for the Angular application
